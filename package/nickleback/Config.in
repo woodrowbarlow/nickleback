@@ -1,0 +1,9 @@
+config BR2_PACKAGE_NICKLEBACK
+	bool "nickleback"
+	help
+	  Nickleback is a full embedded operating system for a homemade
+	  digital photoframe, based on Linux with BusyBox and systemd.
+
+	  More details coming soon.
+
+	  https://github.com/woodrowbarlow/nickleback
