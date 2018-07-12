@@ -1,3 +1,26 @@
+# Nickleback
+
+## Description
+
 Nickleback is a full embedded operating system for a homemade digital photoframe, based on Linux with BusyBox and systemd.
 
 More details coming soon.
+
+## Build Instructions
+
+```bash
+git clone git@github.com:woodrowbarlow/nickleback.git
+cd nickleback
+
+// this will download sources for all third-party packages so you can build offline
+// (optional, this gets done anyway when you run make)
+make source
+
+// this builds the image
+make
+
+// if you modify the nickleback source code, you need to rebuild the package
+make nickleback-rebuild
+// then make the image again
+make
+```
